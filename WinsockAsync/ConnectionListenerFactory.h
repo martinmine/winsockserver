@@ -4,17 +4,14 @@
 #include "IConnectionListener.h"
 #include "SessionManager.h"
 
-namespace NativeWinsock
+class ConnectionListenerFactory
 {
-	class ConnectionListenerFactory
+public:
+	// Creates a new connection manager with the given parameters
+	static IClientConnectionListener* CreateConnectionListener(
+		const int maxConnections, const unsigned short port)
 	{
-	public:
-		// Creates a new connection manager with the given parameters
-		static IConnectionListener* CreateConnectionListener(
-			const int maxConnections, const unsigned short port)
-		{
-			return new ConnectionManager(maxConnections, port);
-		}
-	};
-}
+		return new ConnectionManager(maxConnections, port);
+	}
+};
 #endif

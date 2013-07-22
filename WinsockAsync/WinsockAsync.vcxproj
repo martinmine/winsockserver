@@ -80,17 +80,23 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="ConnectionListenerFactory.h" />
+    <ClInclude Include="IClientConnection.h" />
     <ClInclude Include="IConnection.h" />
+    <ClInclude Include="IConnectionConnector.h" />
     <ClInclude Include="IConnectionEvenentListener.h" />
     <ClInclude Include="IConnectionListener.h" />
     <ClInclude Include="IDataReceiver.h" />
+    <ClInclude Include="IncommingConnection.h" />
     <ClInclude Include="IStatusListener.h" />
+    <ClInclude Include="NetworkConnection.h" />
+    <ClInclude Include="OutgoingConnection.h" />
     <ClInclude Include="SessionManager.h" />
-    <ClInclude Include="Session.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="IncommingConnection.cpp" />
+    <ClCompile Include="OutgoingConnection.cpp" />
     <ClCompile Include="Program.cpp" />
-    <ClCompile Include="Session.cpp" />
+    <ClCompile Include="NetworkConnection.cpp" />
     <ClCompile Include="SessionManager.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

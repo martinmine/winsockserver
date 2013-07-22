@@ -15,16 +15,10 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Session.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="SessionManager.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="IStatusListener.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="IConnection.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="IDataReceiver.h">
@@ -39,15 +33,39 @@
     <ClInclude Include="IConnectionEvenentListener.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="IncommingConnection.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="OutgoingConnection.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IClientConnection.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IConnection.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="NetworkConnection.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IConnectionConnector.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Session.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="SessionManager.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Program.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="NetworkConnection.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IncommingConnection.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OutgoingConnection.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
